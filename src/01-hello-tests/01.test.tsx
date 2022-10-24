@@ -1,9 +1,15 @@
 import {mult, sum} from "./01";
 
+let a: number;
+let b: number;
+let c: number;
+
+beforeEach( () => {
+    a = 3;
+    b = 5;
+    c = 6;
+})
 test('sum should be correct', () => {
-    const a = 3;
-    const b = 5;
-    const c = 6;
 
     const result1 = sum(a, b);
     const result2 = sum(b, c);
@@ -13,9 +19,6 @@ test('sum should be correct', () => {
 })
 
 test('multiply should be correct', () => {
-    const a = 3;
-    const b = 5;
-    const c = 6;
 
     const result1 = mult(a, b);
     const result2 = mult(b, c);
